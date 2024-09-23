@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin:  0 auto;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    padding: 16px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;gap: 10px;
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+main{
+    margin-top: 30px;
+}
+section{
+    width: 100%;
+    display: flex;
+}
+.container img{
+    width: 50%;
+}
+.conteudo{
+    margin-left: 30px;
+}
+
+
+.conteudo h1{
+    margin-bottom: 30px;
+    font-style: italic;
+    border-bottom: 1px solid black;
+}
+
+.conteudo p{
+    margin-top: 0;
+}
+.produtos{
+    width: 100%;
+}
+
+.produtos{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos h1{
+    margin-bottom: 10px;
+    font-style: italic;
+    border-bottom: 1px solid black;
+
+}
+
+.Cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1%;
+    margin-top: 30px;
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+    
+}
+.card img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.card h4{
+    margin-top: 10px;
+}
+.card p{
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.card button{
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+
+}
+
+button:hover{
+    background-color: blue;
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .container img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .conteudo{
+        margin-left: 0;
+    }
+
+    .Cards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 1%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+
+    .containerMobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerMobile img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .conteudo{
+        margin-left: 0;
+    }
+
+    .Cards{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 1%;
+    }
+   
+}
